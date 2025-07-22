@@ -47,7 +47,7 @@
   </main>
 
   <script>
-    const user = 'jamessaint'; // your GitHub username
+    const user = 'jamessaint';
     const repo = 'jamessaint.github.io';
     const path = 'neurological';
 
@@ -64,7 +64,7 @@
           .forEach(file => {
             const li = document.createElement('li');
             const a = document.createElement('a');
-            a.href = file.download_url;
+            a.href = `https://${user}.github.io/${path}/${file.name}`;
             a.textContent = file.name;
             li.appendChild(a);
             list.appendChild(li);
